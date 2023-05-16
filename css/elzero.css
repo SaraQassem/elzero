@@ -96,4 +96,13 @@ header .logo {
     left: 0;
     transition: width var(--main-transition) ease-in-out;
 }
+
+.main-nav li:hover > a {
+    color: var(--main-color);
+    background-color: #fafafa;
+}
+
+.main-nav li:hover > a::before {
+    width: 100%;
+}
 /*********************************************************************************/
