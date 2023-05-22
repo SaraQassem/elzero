@@ -60,6 +60,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     margin: 0 7.5px;
+    position: relative;
 }
 
 header .logo {
@@ -103,5 +104,45 @@ header .logo {
 
 .main-nav > li > a:hover::before {
     width: 100%;
+}
+
+.sub-nav {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    top: calc(100% + 50px);
+    left: 0;
+    padding: 30px;
+    background-color: white;
+    border-bottom: 3px solid var(--main-color);
+    opacity: 0;
+    transition: all var(--main-transition);
+}
+
+.sub-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-nav-link {
+    flex-basis: 45%;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.sub-nav-link:nth-child(n+1):nth-child(-n+8){
+    border-bottom: 1px solid #e9e6e6;
+}
+
+.sub-nav-link > a {
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--main-color);
 }
 /*********************************************************************************/
