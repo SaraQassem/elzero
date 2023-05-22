@@ -76,17 +76,16 @@ header .logo {
     font-size: 18px;
 }
 
-.main-nav a {
+.main-nav > li > a {
     color: #000;
     padding: 0 30px;
     height: 72px;
     display: flex;
     align-items: center;
     position: relative;
-    transition: all var(--main-transition) ease-in-out;
 }
 
-.main-nav a::before {
+.main-nav > li > a::before {
     content: "";
     height: 4px;
     width: 0;
@@ -97,12 +96,12 @@ header .logo {
     transition: width var(--main-transition) ease-in-out;
 }
 
-.main-nav li:hover > a {
+.main-nav > li > a:hover {
     color: var(--main-color);
     background-color: #fafafa;
 }
 
-.main-nav li:hover > a::before {
+.main-nav > li > a:hover::before {
     width: 100%;
 }
 /*********************************************************************************/
