@@ -115,6 +115,7 @@ header .logo {
 .sub-nav {
     width: 100%;
     display: flex;
+    align-items: flex-start;
     gap: 40px;
     position: absolute;
     top: calc(100% + 50px);
@@ -129,15 +130,16 @@ header .logo {
 .sub-nav ul {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
 }
 
 .sub-nav-link {
+    padding: 15px;
     flex-basis: 45%;
     font-weight: bold;
     cursor: pointer;
     color: var(--main-color);
+    align-self: center;
 }
 
 .sub-nav-link:nth-child(n+1):nth-child(-n+8){
@@ -146,9 +148,9 @@ header .logo {
 
 .sub-nav-link > a {
     display: inline-block;
-    padding: 15px;
     font-size: 18px;
     font-weight: bold;
     color: var(--main-color);
+    margin-left: 10px;
 }
 /*********************************************************************************/
