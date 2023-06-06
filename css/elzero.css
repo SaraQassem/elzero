@@ -158,3 +158,34 @@ header .logo {
     margin-left: 10px;
 }
 /*********************************************************************************/
+
+/***********************************  landing  ***********************************/
+.landing .container {
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.landing .container > div {
+    flex-basis: 50%;
+}
+
+.landing .container .text h1 {
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.landing .container .text p {
+    font-size: 23px;
+    line-height: 1.7;
+    margin: 5px 0 0;
+    color: #666;
+    max-width: 500px;
+}
+
+.landing .container .image img {
+    width: 600px;
+}
+/*********************************************************************************/
