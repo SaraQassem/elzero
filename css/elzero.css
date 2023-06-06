@@ -167,6 +167,20 @@ header .logo {
     padding-bottom: 120px;
 }
 
+/* add the shape in the background */
+.landing .container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    transform: skew(0, -6deg);
+    transform-origin: top left;
+    background-color: var(--section-background);
+    z-index: -1;
+}
+
 .landing .container > div {
     flex-basis: 50%;
 }
